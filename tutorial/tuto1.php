@@ -1,5 +1,6 @@
 <?php
-require('../fpdf.php');
+require('../src/FPDF.php');
+use Fpdf\FPDF;
 
 $pdf = new FPDF();
 $pdf->AddPage();

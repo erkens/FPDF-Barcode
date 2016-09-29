@@ -1,21 +1,27 @@
 {
-    "name": "erkens/fpdf-barcode",
-    "version": "1.8.1",
-    "homepage": "https://github.com/Erkens/FPDF-Barcode",
-    "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs. This project extends it with barcode support http://www.fpdf.org",
-    "type": "library",
-    "keywords": ["pdf", "fpdf"],
-    "license": "no usage restriction",
-    "authors": [
-        {
-            "name": "Olivier Plathey",
-            "email": "oliver@fpdf.org",
-            "homepage": "http://fpdf.org/"
-        }
-    ],
-    "autoload": {
-        "classmap": [
-            "fpdf.php"
-        ]
+  "name": "erkens/fpdf-barcode",
+  "version": "1.8.1.1",
+  "homepage": "https://github.com/Erkens/FPDF-Barcode",
+  "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs. This project extends it with barcode support http://www.fpdf.org",
+  "type": "library",
+  "keywords": [
+    "pdf",
+    "fpdf"
+  ],
+  "license": "no usage restriction",
+  "authors": [
+    {
+      "name": "Olivier Plathey",
+      "email": "oliver@fpdf.org",
+      "homepage": "http://fpdf.org/"
+    },
+    {
+      "name": "Michael Erkens"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fpdf\\": "src/"
+    }
+  }
 }
