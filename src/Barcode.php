@@ -33,16 +33,20 @@ class Barcode extends FPDF
      * @param float $x
      * @param float $y
      * @param string $code
-     * @param float $baseline
+     * @param float $width
      * @param float $height
+     * @param bool $isWide
+     * @param bool $extended
+     * @param bool $needChecksum
+     * @param bool $displayText
      */
-    public function code39($x, $y, $code, $baseline=0.5, $height=5.0)
+    public function code39($x, $y, $code, $width=0.4, $height = 20.0, $isWide = false, $extended = true, $needChecksum = false, $displayText = false)
     {
         if (!isset($this->barcodes['code39'])) {
             $this->barcodes['code39'] = new Type\Code39($this);
         }
 
-        $this->barcodes['code39']->drawCode($x, $y, $code, $baseline, $height);
+        $this->barcodes['code39']->drawCode($x, $y, $code, $extended, $needChecksum, $width, $height, $isWide, $displayText);
     }
 
     /**
