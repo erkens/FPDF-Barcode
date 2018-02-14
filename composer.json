@@ -1,6 +1,6 @@
 {
   "name": "erkens/fpdf-barcode",
-  "version": "1.8.2",
+  "version": "1.8.2.01",
   "homepage": "https://github.com/Erkens/FPDF-Barcode",
   "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs. This project extends it with barcode support http://www.fpdf.org",
   "type": "library",
@@ -8,7 +8,7 @@
     "pdf",
     "fpdf"
   ],
-  "license": "no usage restriction",
+  "license": "Unlicense",
   "authors": [
     {
       "name": "Olivier Plathey",
