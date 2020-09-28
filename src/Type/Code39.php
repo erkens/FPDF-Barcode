@@ -1,8 +1,8 @@
 <?php
 
-namespace Fpdf\Type;
+namespace Erkens\Fpdf\Type;
 
-use Fpdf\FPDF;
+use \FPDF;
 
 /**
  * Class Code39

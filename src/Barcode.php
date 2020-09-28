@@ -1,6 +1,8 @@
 <?php
 
-namespace Fpdf;
+namespace Erkens\Fpdf;
+
+use \FPDF;
 
 class Barcode extends FPDF
 {

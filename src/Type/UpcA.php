@@ -1,7 +1,8 @@
 <?php
 
-namespace Fpdf\Type;
+namespace Erkens\Fpdf\Type;
 
+use \FPDF;
 
 class UpcA extends Ean13
 {

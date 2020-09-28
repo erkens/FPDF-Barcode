@@ -1,7 +1,8 @@
 <?php
-namespace Fpdf\Type;
 
-use Fpdf\FPDF;
+namespace Erkens\Fpdf\Type;
+
+use \FPDF;
 
 /**
  * Class Ean13

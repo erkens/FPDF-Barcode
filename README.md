@@ -1,5 +1,5 @@
 # FPDF
-**This repository is only made for cloning official FPDF releases (including PSR-4 support), adding it to a namespace and adding barcode support which are available at: http://www.fpdf.org**
+**This is only a wrapper around the fork of setasign/fdpf (which is also a fork of the original FPDF) and added barcode support**
 
 Orignial source for barcode support is modified from:
 
@@ -15,14 +15,16 @@ FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPD
 
 If you're using Composer to manage dependencies, you can use
 
-    $ composer require erkens/fpdf-barcode:1.8.1
+    $ composer require erkens/fpdf-barcode
 
 or you can include the following in your composer.json file:
 
 ```json
 {
     "require": {
-        "erkens/fpdf-barcode": "1.8.1"
+        "erkens/fpdf-barcode": "^2.0"
     }
 }
 ```
+
+Note: version 2.0 is only a wrapper and is in a different namespace then the previous version because this is only an addition to the setasign/fdpf repo now.
