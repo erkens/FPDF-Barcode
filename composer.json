@@ -1,12 +1,16 @@
 {
   "name": "erkens/fpdf-barcode",
-  "version": "2.0",
-  "homepage": "https://github.com/Erkens/FPDF-Barcode",
-  "description": "Barcode support for FPDF",
+  "homepage": "https://github.com/erkens/FPDF-Barcode",
+  "description": "FPDF Barcode support for EAN13, UPC-A, Code 39, Code 128",
   "type": "library",
   "keywords": [
     "pdf",
-    "fpdf"
+    "fpdf",
+    "barcode",
+    "ean13",
+    "upc-a",
+    "code39",
+    "code128"
   ],
   "license": "Unlicense",
   "authors": [
@@ -15,7 +19,7 @@
     }
   ],
   "require": {
-    "setasign/fpdf": "^1.8.2"
+    "setasign/fpdf": "^1.8"
   },
   "autoload": {
     "psr-4": {
