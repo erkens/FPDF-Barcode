@@ -176,7 +176,7 @@ class Code39
         //Convert to bars
         $encode = '';
         for ($i = 0; $i < strlen($code); $i++) {
-            $encode .= $this->chars[$code{$i}].$gap;
+            $encode .= $this->chars[$code[$i]].$gap;
         }
 
         //Draw bars
@@ -189,7 +189,7 @@ class Code39
         $chars = array_keys($this->chars);
         $sum = 0;
         for ($i = 0; $i < strlen($code); $i++) {
-            $a = array_keys($chars, $code{$i});
+            $a = array_keys($chars, $code[$i]);
             $sum += $a[0];
         }
         $r = $sum % 43;
@@ -333,10 +333,10 @@ class Code39
 
         $code_ext = '';
         for ($i = 0; $i < strlen($code); $i++) {
-            if (ord($code{$i}) > 127) {
-                $this->fpdf->Error('Invalid character: '.$code{$i});
+            if (ord($code[$i]) > 127) {
+                $this->fpdf->Error('Invalid character: '.$code[$i]);
             }
-            $code_ext .= $encode[$code{$i}];
+            $code_ext .= $encode[$code[$i]];
         }
 
         return $code_ext;
@@ -346,7 +346,7 @@ class Code39
     {
         //Draw bars
         for ($i = 0; $i < strlen($code); $i++) {
-            if ($code{$i} == '1') {
+            if ($code[$i] == '1') {
                 $this->fpdf->Rect($x + $i * $w, $y, $w, $h, 'F');
             }
         }
